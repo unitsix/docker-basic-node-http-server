@@ -1,0 +1,6 @@
+version: '0.1'
+services:
+  sandbox:
+    image: "sandbox:latest"
+    volumes:
+    - .:/usr/apps/sandbox
