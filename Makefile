@@ -11,5 +11,5 @@ build:
 	docker build -f Dockerfile . -t $(IMAGE_NAME)
 	
 run:
-	docker-compose run --rm -p 8082:8080 $(SERVICE_NAME) http-server
+	docker-compose run --rm -p 8080:8080 $(SERVICE_NAME) http-server
 	

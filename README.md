@@ -9,29 +9,25 @@ Simple Docker container running a http server
 - Make
 
 ### Make Usage ###
+Build the container
 
 ```
-#!command
 
     $ make build
 ```
+Run the service, you can then open in browser at localhost:8080
 
-This will build the container
 ```
-#!command
 
     $ make run
 ```
-
-The run the service, you can then open in browser at localhost:8082
-
 
 ## Useful Docker commands ##
 
 List all Images
 
 ```
-#!command
+
 
     $ docker images 
 ```
@@ -39,7 +35,7 @@ List all Images
 List all Containers
 
 ```
-#!command
+
 
     $ docker ps -a
 ```
@@ -47,7 +43,7 @@ List all Containers
 Delete an Image
 
 ```
-#!command
+
 
     $ docker rmi <imageid>
 ```
@@ -55,7 +51,7 @@ Delete an Image
 Delete a Container
 
 ```
-#!command
+
 
     $ docker rm <containerid>
 ```
@@ -65,7 +61,7 @@ Tag your image using docker tag.
 In the example below replace my_image with your image’s name, and DOCKER_ID_USER with your Docker Cloud username if needed.
 
 ```
-#!command
+
 
     $ docker tag my_image $DOCKER_ID_USER/my_image
 ```
@@ -73,8 +69,7 @@ In the example below replace my_image with your image’s name, and DOCKER_ID_US
 Push your image to Docker Hub using docker push (making the same replacements as in the previous step). more: https://docs.docker.com/docker-cloud/builds/push-images/
 
 ```
-#!command
+
 
     $ docker push $DOCKER_ID_USER/my_image
 ```
-
