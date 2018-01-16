@@ -1,4 +1,4 @@
-# docker-basic-node-http-server
+# Basic Docker with Node http-server
 
 Simple Docker container running a http server
 
